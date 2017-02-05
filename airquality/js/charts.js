@@ -5,13 +5,13 @@
 
         // It is appeared, render it
         if ($renderTo.is(':appeared') || !series.options.animation) {
-            proceed.call(series);
+            setTimeout(function(){ proceed.call(series); }, 500);
             
         // It is not appeared, halt renering until appear
         } else  {
             $renderTo.appear(); // Initialize appear plugin
             $renderTo.on('appear', function () {
-                proceed.call(series);
+                setTimeout(function(){ proceed.call(series); }, 500);
             });
         }
     };

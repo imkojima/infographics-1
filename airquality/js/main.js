@@ -136,7 +136,7 @@ function showPosition(position) {
 
             if(siteData.EPA_site.SiteName){
                 $('#site').html(siteData.EPA_site.SiteName);
-                $('#siteM').html(siteData.EPA_site.SiteName);
+                $('#siteM每年').html(siteData.EPA_site.SiteName);
             }else{
                 $('#site').html('--');
                 $('#siteM').html('--');
@@ -287,7 +287,7 @@ $(document).ready(function() {
                 var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
 
                 $('#money').animateNumber({
-                    number: 210000000000,
+                    number: 21000000000,
                     numberStep: comma_separator_number_step
                 },3000);
             }
